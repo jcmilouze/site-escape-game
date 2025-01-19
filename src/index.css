@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #34495e;
+      --accent-color: #e74c3c;
+      --text-color: #333;
+      --background-color: #f5f6fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: var(--text-color);
+      background-color: white;
+      line-height: 1.6;
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+    }
+
+    .login-box {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .login-box h1 {
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      font-size: 1.75rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-box button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .error {
+      color: var(--accent-color);
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .home {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .home h1 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .home p {
+      margin-bottom: 1.5rem;
+    }
+
+    .todo-list {
+      margin-top: 2rem;
+    }
+
+    .todo-card {
+      background: var(--background-color);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .todo-card h3 {
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .todo-card ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .todo-card li {
+      margin-bottom: 0.5rem;
+    }
+
+    .cv-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cv-container header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .cv-container h1 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .cv-container h2 {
+      color: var(--secondary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cv-container ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .cv-container li {
+      margin-bottom: 0.5rem;
+    }
+
+    .portfolio-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio-container h1 {
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: var(--background-color);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1.5rem;
+    }
+
+    .project-content h2 {
+      color: var(--primary-color);
+      margin-bottom: 0.75rem;
+    }
+
+    .project-content p {
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    .project-details h3 {
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-details ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .project-details li {
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+
+    .emergency-plan-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .emergency-plan-container h1 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .emergency-plan-container h2 {
+      color: var(--secondary-color);
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .emergency-plan-container ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .emergency-plan-container li {
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-container h1 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .blog-container p {
+      margin-bottom: 1.5rem;
+    }
+
+    .legal-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .legal-container h1 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .legal-container p {
+      margin-bottom: 1.5rem;
+    }
